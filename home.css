@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://wallpapercave.com/wp/wp2757874.gif);
+    background-size:cover;
+    
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    color: #fff;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 20vw;
+    height: 20vw;
+    width: 20vw;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh; 
+    background-color: #252525;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    
+   
+}
+
+.left {
+    font-size: x-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+.item {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw; 
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    display: none;
+    font-size: 3vh; 
+    cursor: pointer;
+    color: white;
+    padding: 1vh; 
+    border-radius: 5vw;
+}
+
+#hidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    background-image: url(https://media.giphy.com/media/fq8HxnZAkoTybqirPN/giphy.gif?cid=ecf05e47fqxre1nz1vf95zcvv9t6g0nu0e051cn0avzgyeg3&ep=v1_gifs_related&rid=giphy.gif&ct=g);
+    background-size: cover;
+    padding: 2vh;
+    z-index: 100;
+    
+}
+
+#hidebar.active {
+    display: block;
+}
+
+.sidebar-item {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 2vh; 
+}
+
+.sidebar-item:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+.close {
+    background: none;
+    border: none;
+    color:white;
+    font-size: 2.4vh; 
+    cursor: pointer;
+    margin-bottom: 2vh; 
+}
+
+@media (max-width: 768px) {
+    .right {
+        display: none;
+    }
+    .sidebar {
+        display: block;
+    }
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+h2:hover{
+    text-decoration: underline;
+    color:chartreuse;
+    
+}

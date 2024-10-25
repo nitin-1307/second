@@ -1,0 +1,194 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #2e2e2e;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    background-color: #e45656;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+}
+
+.left {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+.item {
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    display: none;
+    font-size: 3vh;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    padding: 1vh;
+    border-radius: 5vw;
+}
+
+#hidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: antiquewhite;
+    padding: 2vh;
+    z-index: 1000;
+}
+
+#hidebar.active {
+    display: block;
+}
+
+.sidebar-item {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 2vh;
+}
+
+.sidebar-item:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+.close {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2.4vh;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+    .right {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(14, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fname, .lname {
+    display: flex;
+    gap: 15px;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+text {
+    height: 80px;
+}
+
+.button {
+    display: flex;
+    width: 10vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: aqua;
+    color: white;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.button:hover {
+    background-color: #e02360;
+}
+
+.form-group {
+    margin-bottom: 2vw;
+}
+
+input[type="password"], input[type="password"], textarea {
+    width: 60%;
+    padding: 0.8vw;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 2vw;
+}
+
+.details {
+    color: #fff; 
+    font-weight: bold;
+}

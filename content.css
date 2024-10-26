@@ -5,9 +5,7 @@ body, html {
     height: 100%;
     width: 100%;
     background-image: url(https://wallpaperaccess.com/full/8642898.gif);
-    background-size: 300vh;
-    background-position:cover;
-    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
